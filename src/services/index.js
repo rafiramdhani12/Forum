@@ -37,13 +37,13 @@ export const downvote = (id) => {
 };
 
 export const checkIsAlreadyVoted = (id) => {
-  const vote = JSON.parse(localStorage.getItem("vote"));
+  const vote = JSON.parse(localStorage.getItem("votes")); // Gunakan "votes" bukan "vote" untuk sesuai dengan penyimpanan lokal
 
-  vote.upvote.find((item) => item == id);
+  return vote.upvote.includes(id); // Mengembalikan true jika id ditemukan dalam upvote
 };
 
 export const checkIsAlreadyDownVoted = (id) => {
-  const vote = JSON.parse(localStorage.getItem("vote"));
+  const vote = JSON.parse(localStorage.getItem("votes")); // Gunakan "votes" bukan "vote" untuk sesuai dengan penyimpanan lokal
 
-  vote.downvote.find((item) => item == id);
+  return vote.downvote.includes(id); // Mengembalikan true jika id ditemukan dalam downvote
 };

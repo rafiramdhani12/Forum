@@ -2,8 +2,9 @@
   "out": "./migrations-folder",
   "schema": "./utils/schema.js",
   "breakpoints": false,
-  "driver": "pg",
+  "dialect": "postgresql",
+
   "dbCredentials": {
-    "connectionString": "postgresql://magicSearch_owner:a5dYpPijAhG1@ep-holy-poetry-a1b06c65.ap-southeast-1.aws.neon.tech/top-ideas?sslmode=require"
+    "url": "postgresql://magicSearch_owner:a5dYpPijAhG1@ep-holy-poetry-a1b06c65.ap-southeast-1.aws.neon.tech/top-ideas?sslmode=require"
   }
 }

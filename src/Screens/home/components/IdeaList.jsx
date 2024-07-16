@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import IdeaItem from "./IdeaItem";
 
-const IdeaList = ({IdeaList, refreshData}) => {
+const IdeaList = ({IdeaList, refreshData, like}) => {
   return (
     <>
       <div>
@@ -11,6 +11,7 @@ const IdeaList = ({IdeaList, refreshData}) => {
             key={index}
             index={index}
             refreshData={refreshData}
+            like={like}
           />
         ))}
       </div>

@@ -10,9 +10,7 @@ const Hero = () => {
         <h2 className="text-3xl font-bold text-center">
           Tempat naro bacotan taro apa aja
         </h2>
-        <p>
-          <small>mines fitur comment rek blm belajar gw woilah</small>
-        </p>
+
         <h2 className="text-center my-3">
           <strong className="text-secondary font-bold text-lg">
             Like your favorites ideas.
